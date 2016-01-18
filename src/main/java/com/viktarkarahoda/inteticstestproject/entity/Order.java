@@ -7,7 +7,7 @@ public class Order {
 	private int idCar;
 	private int idClient;
 	private int cost;
-	private String dateOrder;
+	private String orderdate;
 	private OrderStatus orderStatus = OrderStatus.IN_PROGRESS;
 
 	public int getIdOrder() {
@@ -43,11 +43,11 @@ public class Order {
 	}
 
 	public String getDateOrder() {
-		return dateOrder;
+		return orderdate;
 	}
 
-	public void setDateOrder(String dateOrder) {
-		this.dateOrder = dateOrder;
+	public void setOrderDate(String orderdate) {
+		this.orderdate = orderdate;
 	}
 
 	public OrderStatus getOrderStatus() {

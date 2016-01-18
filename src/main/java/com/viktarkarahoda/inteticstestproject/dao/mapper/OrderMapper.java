@@ -15,7 +15,7 @@ public class OrderMapper implements RowMapper<Order> {
 		order.setIdOrder(rs.getInt("idOrder"));
 		order.setIdCar(rs.getInt("idCar"));
 		order.setIdClient(rs.getInt("idClient"));
-		order.setDateOrder(rs.getString("dateOrder"));
+		order.setOrderDate(rs.getString("orderdate"));
 		order.setCost(rs.getInt("orderCost"));
 		order.setOrderStatus(OrderStatus.fromString(rs.getString("orderStatus")));
 		return order;
